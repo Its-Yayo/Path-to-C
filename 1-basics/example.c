@@ -2,6 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 
 // Funciones basicas de prueba
 int example_sum(int a, int b) {
@@ -11,9 +12,12 @@ int example_sum(int a, int b) {
 bool example_bool(int a, int b) {
   // Condicion simple 
   if (a > b) {
-    return 1;
+    return 1; // C++ -> true
+              // C -> 1
   }
-  return 0;
+
+  return 0; // C++ -> false
+            // C -> 0
 }
 
 int main(void) {
@@ -24,7 +28,10 @@ int main(void) {
   int a, b; // Aqui definimos 2 enteros
             // vamos a pedirlos como parte del stdin (standard input) para despues mandar llamar la funcion de arriba
   
+  puts("Ingresa el primer numero");
   scanf("%i", &a); // la %i denota una entrada de tipo entero (numero). "%s" seria para string.h o char[]
+  
+  puts("Ingresa el segundo numero");
   scanf("%i", &b); // la &a y &b denotan una referencia 
 
   // Llamadas a las funciones especificas
