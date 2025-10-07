@@ -4,6 +4,12 @@
 #include <stdbool.h>
 #include <string.h>
 
+// C++ delete x;
+// C free(x);
+//
+// C++ new x;
+// C malloc(x);
+
 // Funciones basicas de prueba
 int example_sum(int a, int b) {
   return a + b;
