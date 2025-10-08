@@ -16,7 +16,8 @@ int main(void) {
    * %4d -> entero normal pero con 4 caracteres de amplitud
    * %f -> flotante normal
    * %.4f -> flotante con 4 caracteres despues del punto decimal
-   * 
+   * \n -> salto de linea
+   * \t -> tabulador
    */
 
   int fahr, celcius; // signed int
@@ -52,5 +53,7 @@ int main(void) {
   for (fahr = 0; fahr <= 300; fahr += 20) {
     printf("%3d\t%6.1f\n", fahr, (5.0 / 9.0) * (fahr - 32));
   }
+
+
 
 }
