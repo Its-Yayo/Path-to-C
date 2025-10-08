@@ -29,8 +29,12 @@ int main(void) {
 
   fahr = lower;
   
+  // puts() nada mas es para escupir texto como stdout (standard output)
+  puts("Ciclo while\n\n");
+
   puts("Celcius\tFahrenheit");
-    
+  
+  // Ciclo while, establece una condicion antes de ejecutar un statement 
   while (fahr <= upper) { // ciclo while menor o igual
     celcius = 5 * (fahr - 32) / 9; // formula para calcular celcius 
                                    // con fahrenheit
@@ -38,4 +42,15 @@ int main(void) {
 
     fahr += step; // fahr = fahr + step
   }
+
+  puts("---------------------------\n");
+
+  puts("Ciclo for\n\n");
+  puts("Celcius\tFahrenheit");
+
+  // Ciclo for, primero es la entrada, hasta donde se va a hacer y el incremento (declaracion, condicion e incremento)
+  for (fahr = 0; fahr <= 300; fahr += 20) {
+    printf("%3d\t%6.1f\n", fahr, (5.0 / 9.0) * (fahr - 32));
+  }
+
 }
