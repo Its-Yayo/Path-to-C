@@ -37,7 +37,7 @@ int main(void) {
   
   puts("--------------------------------");
   
-  printf("Le agregamos nuevo valor: 8", append_array(arr, 8));
+  printf("Le agregamos nuevo valor: 8, se lo arreglamos\n", append_array(arr, 8));
 
   printf("%i", arr);
 
