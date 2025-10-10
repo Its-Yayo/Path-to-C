@@ -37,6 +37,7 @@ int main(void) {
   
   puts("--------------------------------");
   
+  // TODO -> Checar append_array()
   printf("Le agregamos nuevo valor: 8, se lo arreglamos\n", append_array(arr, 8));
 
   printf("%i", arr);
