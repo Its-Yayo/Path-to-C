@@ -2,8 +2,12 @@
 #include <stdlib.h>
 #include <math.h>
 
-int array() {
-  
+int append_array(int *c, int a) {
+  int size = sizeof(c) / sizeof(c[0]);
+  c[size] = a; // Le asignamos a = size del arreglo para insertar el valor
+               // desde ahi
+
+  c[size + 1] = '\0'; // nullptr para no causar un buffer overflow
 }
 
 int main(void) {
@@ -32,5 +36,9 @@ int main(void) {
   printf("Memoria falsa: %i\n", arr[7]); // esto esta mal, no hay un elemento 7, direccion de memoria falsa
   
   puts("--------------------------------");
+  
+  printf("Le agregamos nuevo valor: 8", append_array(arr, 8));
+
+  printf("%i", arr);
 
 }
