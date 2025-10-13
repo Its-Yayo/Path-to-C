@@ -38,7 +38,7 @@ int main(void) {
   // debug
   printf("%s\n", str);
  
-  // init values
+  // init values, arreglar size_str con stdin
   int size_str = strlen(str);
   int size_letters = sizeof(letters) / sizeof(letters[0]);
   int cont = 0;
@@ -46,7 +46,7 @@ int main(void) {
   printf("%d\n", size_str); // debug
   printf("%i\n", size_letters); // debug
 
-  // FIXME
+
   for (int i = 0; i < size_str; i++) {
     for (int j = 0; j < size_letters; j++) {
       if (str[i] == letters[j]) {
