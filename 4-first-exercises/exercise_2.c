@@ -43,6 +43,8 @@ int main(void) {
 
   // FIXME
   for (int i = 0; i < strlen(str); i++) {
+    printf("%c", str[i]); // debug
+
     for (int j = 0; j < (sizeof(letters) / sizeof(letters[0])); j++) {
       if (str[i] == letters[j]) {
         cont += 1;
