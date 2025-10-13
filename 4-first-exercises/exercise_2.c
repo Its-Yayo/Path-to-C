@@ -30,21 +30,40 @@ out -> 4
 static char letters[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}; 
 
 
+// Funcion extra 
+
+int conteo_de_vocales(char *palabra, int cont) {
+  if (palabra[] == 'a' || palabra[] == 'e' || palabra[] == 'i' || palabra[] == 'o' || palabra[] == 'u' || palabra[] == 'A' || palabra[] == 'E' || palabra[] == 'I' || palabra[] == 'O' || palabra[] == 'U') {
+    cont += 1;
+  }
+
+  return cont;
+}
+
+
 int main(void) {
-  char str[] = "";
-  scanf("%[^\n]%*c", &str); // Regex que toma en cuenta los whitespaces
+  // Metodologia de Ecodeg
+  char palabra[] = "Hola mundo";
+  printf("%i", conteo_de_vocales(palabra, 0));
+  
+
+  puts("---------------------------------------\n\n");
+
+  // Metodologia de Yayo
+  char str[] = "hola mundo";
+  // scanf("%[^\n]", &str); // Regex que toma en cuenta los whitespaces
                             // hasta terminar el stdin
   
   // debug
-  printf("%s\n", str);
+  printf("%s\n", &str);
  
   // init values, arreglar size_str con stdin
-  int size_str = strlen(str);
+  int size_str = sizeof(str) / sizeof(str[0]);
   int size_letters = sizeof(letters) / sizeof(letters[0]);
   int cont = 0;
 
   printf("%d\n", size_str); // debug
-  printf("%i\n", size_letters); // debug
+  printf("%i\n\n", size_letters); // debug
 
 
   for (int i = 0; i < size_str; i++) {
@@ -55,7 +74,7 @@ int main(void) {
     } 
   }
 
-  printf("El contador es: %i\n", cont);
+  printf("%i\n", cont);
 }
 
 
