@@ -37,22 +37,25 @@ int main(void) {
   
   // debug
   printf("%s\n", str);
-
-
+ 
+  // init values
+  int size_str = strlen(str);
+  int size_letters = sizeof(letters) / sizeof(letters[0]);
   int cont = 0;
 
-  // FIXME
-  for (int i = 0; i < strlen(str); i++) {
-    printf("%c", str[i]); // debug
+  printf("%d\n", size_str); // debug
+  printf("%i\n", size_letters); // debug
 
-    for (int j = 0; j < (sizeof(letters) / sizeof(letters[0])); j++) {
+  // FIXME
+  for (int i = 0; i < size_str; i++) {
+    for (int j = 0; j < size_letters; j++) {
       if (str[i] == letters[j]) {
         cont += 1;
       }
     } 
   }
 
-  printf("%i", cont);
+  printf("El contador es: %i\n", cont);
 }
 
 
