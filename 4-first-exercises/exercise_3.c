@@ -23,6 +23,8 @@ Negativos: 2
 Ceros: 1
 */
 
+// if (scanf("%d", &i) > 0) cont_positivo++
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -31,7 +33,7 @@ int main(void) {
   int n;
   scanf("%i", &n);
 
-  int array[n] = {};
+  int array[n];
   scanf("%i", &array);
 
   // debug
@@ -44,5 +46,16 @@ int main(void) {
   int cont_ceros = 0;
   
   // Logica para iterar sobre el arreglo
+  
+  for (int i = 0; i < sizeof(array) / sizeof(array[0]); i++) {
+    if (array[i] > 0) cont_positivo++;
+    else if (array[i] < 0) cont_negativo++;
+    else cont_ceros++;
+  }
+
+  printf("Positivos: %i\n", cont_positivo);
+  printf("Negativos: %i\n", cont_negativo);
+  printf("Ceros: %i\n", cont_ceros);
+
   
 }
