@@ -32,7 +32,8 @@ Ceros: 1
 int main(void) {
   int n;
   scanf("%i", &n);
-
+  
+  // Aqui esta el problema FIXME
   int array[n];
   scanf("%i", &array);
 
