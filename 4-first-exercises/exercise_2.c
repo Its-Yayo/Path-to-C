@@ -27,35 +27,19 @@ out -> 4
 #include <string.h>
 
 
-static char letters[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}; 
-
-
-// Funcion extra 
-
-int conteo_de_vocales(char *palabra, int cont) {
-  if (palabra[] == 'a' || palabra[] == 'e' || palabra[] == 'i' || palabra[] == 'o' || palabra[] == 'u' || palabra[] == 'A' || palabra[] == 'E' || palabra[] == 'I' || palabra[] == 'O' || palabra[] == 'U') {
-    cont += 1;
-  }
-
-  return cont;
-}
+static char letters[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 
 
 int main(void) {
-  // Metodologia de Ecodeg
-  char palabra[] = "Hola mundo";
-  printf("%i", conteo_de_vocales(palabra, 0));
-  
 
   puts("---------------------------------------\n\n");
 
-  // Metodologia de Yayo
   char str[] = "hola mundo";
   // scanf("%[^\n]", &str); // Regex que toma en cuenta los whitespaces
                             // hasta terminar el stdin
   
   // debug
-  printf("%s\n", &str);
+  printf("%s\n", str);
  
   // init values, arreglar size_str con stdin
   int size_str = sizeof(str) / sizeof(str[0]);

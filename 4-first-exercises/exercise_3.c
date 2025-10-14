@@ -22,3 +22,27 @@ Positivos: 2
 Negativos: 2  
 Ceros: 1
 */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) {
+  int n;
+  scanf("%i", &n);
+
+  int array[n] = {};
+  scanf("%i", &array);
+
+  // debug
+  puts("-----");
+  printf("%i\n", n);
+  printf("%i\n", array);
+
+  int cont_positivo = 0;
+  int cont_negativo = 0;
+  int cont_ceros = 0;
+  
+  // Logica para iterar sobre el arreglo
+  
+}
