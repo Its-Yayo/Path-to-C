@@ -11,7 +11,7 @@ La segunda línea contiene N números enteros separados por espacios.
 
 Salida:
 
-Tres líneas con la cantidad de números positivos, negativos y ceros, respectivamente. Cada línea debe comenzar con el texto correspondiente.
+Tres líneasi con la cantidad de números positivos, negativos y ceros, respectivamente. Cada línea debe comenzar con el texto correspondiente.
 
 Ejemplo:
 
@@ -34,13 +34,19 @@ int main(void) {
   scanf("%i", &n);
   
   // Aqui esta el problema FIXME
-  int array[n];
-  scanf("%i", &array);
+  int array[] = {};
+
+  for (int i = 0; i < n; i++) {
+    scanf("%i", &array[i]);
+  }
 
   // debug
   puts("-----");
   printf("%i\n", n);
-  printf("%i\n", array);
+  
+  for (int i = 0; i < n; i++) {
+      printf("%i\n", array[i]);
+  }
 
   int cont_positivo = 0;
   int cont_negativo = 0;
