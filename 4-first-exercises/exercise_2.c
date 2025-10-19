@@ -31,18 +31,15 @@ static char letters[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 
 
 int main(void) {
-
-  puts("---------------------------------------\n\n");
-
-  char str[] = "hola mundo";
-  // scanf("%[^\n]", &str); // Regex que toma en cuenta los whitespaces
+  char str[100] = "";
+  scanf("%[^\n]", &str); // Regex que toma en cuenta los whitespaces
                             // hasta terminar el stdin
   
   // debug
   printf("%s\n", str);
  
   // init values, arreglar size_str con stdin
-  int size_str = sizeof(str) / sizeof(str[0]);
+  int size_str = strlen(str);
   int size_letters = sizeof(letters) / sizeof(letters[0]);
   int cont = 0;
 
