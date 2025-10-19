@@ -26,38 +26,26 @@ Ceros: 1
 // if (scanf("%d", &i) > 0) cont_positivo++
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+
 
 int main(void) {
-  int n;
-  scanf("%i", &n);
-  
-  // Aqui esta el problema FIXME
-  int array[] = {};
-
-  for (int i = 0; i < n; i++) {
-    scanf("%i", &array[i]);
-  }
-
-  // debug
-  puts("-----");
-  printf("%i\n", n);
-  
-  for (int i = 0; i < n; i++) {
-      printf("%i\n", array[i]);
-  }
-
   int cont_positivo = 0;
   int cont_negativo = 0;
   int cont_ceros = 0;
   
-  // Logica para iterar sobre el arreglo
+  int n;
+  scanf("%i", &n);
+
+
+  for (int i = 0; i < n; i++) {
+    int num = 0;
+    
+    scanf("%i", &num);
   
-  for (int i = 0; i < sizeof(array) / sizeof(array[0]); i++) {
-    if (array[i] > 0) cont_positivo++;
-    else if (array[i] < 0) cont_negativo++;
+    if (num > 0) cont_positivo++;
+    else if (num < 0) cont_negativo++;
     else cont_ceros++;
+
   }
 
   printf("Positivos: %i\n", cont_positivo);
