@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap: C + DSAs (De Cero a Hardcore)</title>
+    <style>
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .no-print { display: none; }
+        }c
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #ffffff;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 40px;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        .exam {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #e74c3c;
+        }
+        .exam h3 {
+            color: #c0392b;
+            margin-top: 0;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .recursos {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #bdc3c7;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container no-print">
+        <button class="button" onclick="window.print()">Descargar como PDF</button>
+    </div>
+
+    <h1>ROADMAP: C + DSAs (De Cero a Hardcore)</h1>
+
+    <div class="section">
+        <h2>PARTE 1: BASICO/INTERMEDIO (4-6 semanas)</h2>
+        
+        <h3>C - Fundamentos</h3>
+        <ol>
+            <li>Sintaxis basica: printf, scanf, tipos de datos (int, float, char, double)</li>
+            <li>Operadores: aritmeticos, logicos, relacionales, bitwise basicos</li>
+            <li>Control de flujo: if/else, switch, ternario</li>
+            <li>Loops: for, while, do-while, break, continue</li>
+            <li>Funciones: declaracion, definicion, paso por valor</li>
+            <li>Arrays: unidimensionales, bidimensionales, strings (char arrays)</li>
+            <li>Punteros basicos: declaracion, dereferencia, aritmetica basica</li>
+            <li>Structs basicos: declaracion, acceso a miembros</li>
+        </ol>
+
+        <h3>DSAs - Fundamentos</h3>
+        <ol>
+            <li>Complejidad: Big O notation (tiempo y espacio)</li>
+            <li>Arrays y Strings:
+                <ul>
+                    <li>Busqueda lineal</li>
+                    <li>Two pointers</li>
+                    <li>Sliding window basico</li>
+                </ul>
+            </li>
+            <li>Sorting basico:
+                <ul>
+                    <li>Bubble sort</li>
+                    <li>Selection sort</li>
+                    <li>Insertion sort</li>
+                </ul>
+            </li>
+            <li>Busqueda:
+                <ul>
+                    <li>Binary search (iterativo y recursivo)</li>
+                </ul>
+            </li>
+            <li>Recursion basica: factorial, fibonacci, suma</li>
+        </ol>
+
+        <div class="exam">
+            <h3>EXAMEN BASICO/INTERMEDIO</h3>
+            <p>Implementa estos 5 problemas en C puro:</p>
+            <ol>
+                <li>Problema de arrays: Rotar un array k posiciones</li>
+                <li>String manipulation: Verificar si una cadena es palindromo (case-insensitive)</li>
+                <li>Busqueda: Implementar binary search en un array ordenado</li>
+                <li>Recursion: Suma de digitos de un numero usando recursion</li>
+                <li>Mini proyecto: Sistema de registro de estudiantes (usando arrays de structs, CRUD basico sin dinamico)</li>
+            </ol>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>PARTE 2: INTERMEDIO (6-8 semanas)</h2>
+        
+        <h3>C - Intermedio</h3>
+        <ol>
+            <li>Punteros avanzados: punteros a punteros, punteros a funciones</li>
+            <li>Memoria dinamica: malloc, calloc, realloc, free</li>
+            <li>Strings avanzado: manipulacion con punteros, string.h</li>
+            <li>Structs avanzados: structs anidados, arrays de structs, punteros a structs</li>
+            <li>Typedef y Enum: uso practico</li>
+            <li>Archivos: fopen, fread, fwrite, fclose</li>
+            <li>Preprocesador: #define, #ifdef, macros</li>
+        </ol>
+
+        <h3>DSAs - Intermedio</h3>
+        <ol>
+            <li>Linked Lists:
+                <ul>
+                    <li>Singly linked list (insertar, eliminar, buscar, reversa)</li>
+                    <li>Doubly linked list</li>
+                    <li>Circular linked list</li>
+                </ul>
+            </li>
+            <li>Stacks: implementacion con arrays y linked lists</li>
+            <li>Queues: implementacion con arrays y linked lists, circular queue</li>
+            <li>Hashing basico:
+                <ul>
+                    <li>Hash tables (implementacion simple)</li>
+                    <li>Manejo de colisiones (chaining)</li>
+                </ul>
+            </li>
+            <li>Sorting avanzado:
+                <ul>
+                    <li>Merge sort</li>
+                    <li>Quick sort</li>
+                </ul>
+            </li>
+            <li>Recursion avanzada: backtracking basico</li>
+        </ol>
+
+        <div class="exam">
+            <h3>EXAMEN INTERMEDIO</h3>
+            <p>Implementa estos 6 problemas:</p>
+            <ol>
+                <li>Linked List: Detectar ciclos (Floyd's algorithm)</li>
+                <li>Stack: Validar parentesis balanceados (multiples tipos: (), {}, [])</li>
+                <li>Queue: Implementar cola usando dos stacks</li>
+                <li>Hashing: Sistema de cache LRU (basico, tamano fijo)</li>
+                <li>Recursion: Generar todas las permutaciones de una cadena</li>
+                <li>Mini proyecto: Editor de texto simple en consola (con undo/redo usando stacks, guardar/cargar archivos)</li>
+            </ol>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>PARTE 3: AVANZADO (8-10 semanas)</h2>
+        
+        <h3>C - Avanzado</h3>
+        <ol>
+            <li>Bitwise operations: manipulacion avanzada de bits</li>
+            <li>Function pointers: callbacks, tablas de funciones</li>
+            <li>Memory management: memory leaks, valgrind</li>
+            <li>Optimization: inline, register, volatile</li>
+            <li>Unions: uso y diferencias con structs</li>
+            <li>Manejo de errores: errno, perror</li>
+            <li>Makefiles basicos</li>
+        </ol>
+
+        <h3>DSAs - Avanzado</h3>
+        <ol>
+            <li>Trees:
+                <ul>
+                    <li>Binary trees (traversals: inorder, preorder, postorder)</li>
+                    <li>Binary Search Trees (BST): insertar, buscar, eliminar</li>
+                    <li>AVL trees (self-balancing)</li>
+                    <li>Heap (min-heap, max-heap, heap sort)</li>
+                </ul>
+            </li>
+            <li>Graphs:
+                <ul>
+                    <li>Representacion (adjacency matrix, adjacency list)</li>
+                    <li>BFS (Breadth-First Search)</li>
+                    <li>DFS (Depth-First Search)</li>
+                    <li>Dijkstra's algorithm</li>
+                    <li>Topological sort</li>
+                </ul>
+            </li>
+            <li>Tries: implementacion y busqueda</li>
+            <li>Dynamic Programming basico:
+                <ul>
+                    <li>Memoization</li>
+                    <li>Tabulation</li>
+                    <li>Problemas clasicos: knapsack, LCS, LIS</li>
+                </ul>
+            </li>
+            <li>Greedy algorithms: conceptos y problemas clasicos</li>
+        </ol>
+
+        <div class="exam">
+            <h3>EXAMEN AVANZADO</h3>
+            <p>Implementa estos 7 problemas:</p>
+            <ol>
+                <li>BST: Implementar BST completo con todas las operaciones + encontrar k-esimo elemento mas pequeno</li>
+                <li>Heap: Implementar priority queue usando min-heap</li>
+                <li>Graph - BFS/DFS: Encontrar caminos en un laberinto</li>
+                <li>Graph - Dijkstra: Encontrar el camino mas corto en un grafo ponderado</li>
+                <li>Trie: Sistema de autocompletado de palabras</li>
+                <li>DP: Problema de la mochila (0/1 knapsack)</li>
+                <li>Mini proyecto: Sistema de gestion de red social (grafo de usuarios, BFS para amigos en comun, Dijkstra para grados de separacion)</li>
+            </ol>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>PARTE 4: HARDCORE (10-12 semanas)</h2>
+        
+        <h3>C - Hardcore</h3>
+        <ol>
+            <li>Memory alignment y padding</li>
+            <li>Atomics y concurrencia basica (si quieres pthreads)</li>
+            <li>Custom memory allocators</li>
+            <li>Bit manipulation avanzada: tecnicas de optimizacion</li>
+            <li>Profiling y debugging avanzado: gdb, valgrind avanzado</li>
+            <li>Sistema de modulos: headers guards, static/extern</li>
+        </ol>
+
+        <h3>DSAs - Hardcore</h3>
+        <ol>
+            <li>Advanced Trees:
+                <ul>
+                    <li>Red-Black trees</li>
+                    <li>B-trees</li>
+                    <li>Segment trees</li>
+                    <li>Fenwick trees (Binary Indexed Tree)</li>
+                </ul>
+            </li>
+            <li>Advanced Graphs:
+                <ul>
+                    <li>Bellman-Ford</li>
+                    <li>Floyd-Warshall</li>
+                    <li>Kruskal's y Prim's (MST)</li>
+                    <li>Strongly connected components (Kosaraju, Tarjan)</li>
+                    <li>Network flow (Ford-Fulkerson)</li>
+                </ul>
+            </li>
+            <li>Advanced DP:
+                <ul>
+                    <li>DP con bitmasks</li>
+                    <li>DP en arboles</li>
+                    <li>Matrix chain multiplication</li>
+                </ul>
+            </li>
+            <li>String algorithms:
+                <ul>
+                    <li>KMP (pattern matching)</li>
+                    <li>Rabin-Karp</li>
+                    <li>Z-algorithm</li>
+                </ul>
+            </li>
+            <li>Advanced Data Structures:
+                <ul>
+                    <li>Skip lists</li>
+                    <li>Bloom filters</li>
+                    <li>Disjoint Set Union (Union-Find)</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="exam">
+            <h3>EXAMEN HARDCORE</h3>
+            <p>Implementa estos 8 problemas + 1 proyecto final:</p>
+            <ol>
+                <li>Red-Black Tree: Implementacion completa con todas las rotaciones</li>
+                <li>Segment Tree: Range sum queries con actualizaciones</li>
+                <li>Graph - MST: Implementar Kruskal con Union-Find</li>
+                <li>Graph - Network Flow: Maximo flujo en una red</li>
+                <li>String - KMP: Busqueda de patrones eficiente</li>
+                <li>DP avanzado: Edit distance (Levenshtein)</li>
+                <li>Custom allocator: Implementar tu propio malloc/free basico</li>
+                <li>Sistema completo: Implementar un cache LRU con todas las optimizaciones</li>
+            </ol>
+            
+            <h3>PROYECTO FINAL HARDCORE</h3>
+            <p>Sistema de base de datos en memoria con:</p>
+            <ul>
+                <li>B-tree para indexacion</li>
+                <li>Hash table para busquedas rapidas</li>
+                <li>Query parser basico</li>
+                <li>Transacciones con rollback</li>
+                <li>Persistencia en archivo</li>
+                <li>Memory pool custom</li>
+                <li>Todo en C puro, sin bibliotecas externas (excepto standard lib)</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section recursos">
+        <h2>RECURSOS Y PRACTICA</h2>
+        
+        <h3>Para C:</h3>
+        <ul>
+            <li>K&R "The C Programming Language" (libro clasico)</li>
+            <li>Compiler: GCC con -Wall -Wextra -std=c11</li>
+            <li>Debugger: GDB + Valgrind</li>
+        </ul>
+
+        <h3>Para DSAs:</h3>
+        <ul>
+            <li>LeetCode (filtrar por C)</li>
+            <li>Codeforces (Division 2 y 3)</li>
+            <li>CSES Problem Set</li>
+            <li>CodeWars (como mencionaste)</li>
+        </ul>
+
+        <h3>Sistema de evaluacion:</h3>
+        <ul>
+            <li>Basico: Debes resolver sin ayuda en menos de 30 min cada problema</li>
+            <li>Intermedio: Sin ayuda en menos de 45 min cada problema</li>
+            <li>Avanzado: Sin ayuda en menos de 60 min cada problema</li>
+            <li>Hardcore: Sin ayuda en menos de 90 min cada problema</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; padding: 20px; background: #2c3e50; color: white; border-radius: 8px;">
+        <p style="margin: 0; font-size: 18px;">Este roadmap te llevara de cero a ser un verdadero hardcore en C.</p>
+        <p style="margin: 10px 0 0 0;">La clave esta en implementar todo desde cero (no usar bibliotecas externas) y entender cada byte de memoria que usas.</p>
+    </div>
+
+    <div class="button-container no-print">
+        <button class="button" onclick="window.print()">Descargar como PDF</button>
+    </div>
+</body>
+</html>
