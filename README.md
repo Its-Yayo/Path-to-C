@@ -1,21 +1,3 @@
-# Path-to-C
-Ejercicios y notas para estudiar C
+## Path para aprender C
 
-## 1-basics
-- Introducción al lenguaje
-
-## 2-Variables
-- Tipos de datos
-- Expresiones
-- Operadores lógicos
-- Especificadores de formato
-- Bucles
-
-## 3-arrays
-- Inicialización de arrays
-- Agregación de elementos
-- Errores comunes
-- Iteración de arrays
-
-
-
+### Todo el roadmap esta en el ```roadmap.pdf``` de este repo donde abarcaremos tanto el lenguaje C como DSAs puros y profundos
