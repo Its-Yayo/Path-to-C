@@ -31,7 +31,7 @@ static char letters[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 
 
 int main(void) {
-  char str[100] = "";
+  char str[200] = "";
   scanf("%[^\n]", &str); // Regex que toma en cuenta los whitespaces
                             // hasta terminar el stdin
   
