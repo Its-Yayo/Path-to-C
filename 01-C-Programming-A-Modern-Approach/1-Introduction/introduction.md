@@ -11,3 +11,27 @@ For a C program, there's these 3 steps when code is being compiled
 - Compiling: The modified program now goes to the compiler, which translates it into machine code
 - Linking: A linker combines the object code produced by the compiler with any additional code needed to yield a complete
 executable program
+
+Directives are these things <stdio.h>, <hello.h>, etc.
+These are also headers per se
+
+```
+include <stdio.h>
+
+int main(void) {
+    printf("Helooooo\n");
+    return 0;
+}
+```
+
+---
+
+functions - series of statements with a name
+statements - instructions, command to be executed
+
+
+This function above has a return statement and a function call named printf().
+
+
+
+
