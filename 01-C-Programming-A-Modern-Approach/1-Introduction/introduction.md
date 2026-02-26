@@ -16,7 +16,7 @@ Directives are these things <stdio.h>, <hello.h>, etc.
 These are also headers per se
 
 ```
-include <stdio.h>
+#include <stdio.h>
 
 int main(void) {
     printf("Helooooo\n");
@@ -31,6 +31,16 @@ statements - instructions, command to be executed
 
 
 This function above has a return statement and a function call named printf().
+
+---
+
+RC Notes
+
+- Statements can be divided by different lines
+
+
+
+
 
 
 
