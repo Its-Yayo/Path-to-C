@@ -7,6 +7,13 @@
  * 15 / 10 = 1 (res -> 15 - 10 = 5)
  * 5 / 5 = 1 (res -> 5 - 5 = 0)
  * end of loop
+ *
+ * 98 bills
+ * 98 / 20 = 4 (res -> 98 - 80 = 18)
+ * 18 / 10 = 1 (res -> 18 - 10 = 8)
+ * 8 / 5 = 1 (res -> 8 - 5 = 3)
+ * 3 < 5
+ * end of loop
  * Hooyeah */
 
 #include <stdio.h>
@@ -14,18 +21,30 @@
 #include <string.h>
 #include <math.h>
 
-// arg -> amount of money
-// returns -> string with details of how many bills bank needs to deliver
-int
-bills(int amount) {
-	int amount_1 = amount / 20; // n bills of 20
-	// TODO -> manana sin falta lo pongo
-	int amount_2 = ()
-}
-
 int
 main(void) {
-	printf("%d\n", bills(55));
+  int amount = 98;
+  
+	int amount_1 = amount / 20;
+  printf("Amount of $20: %d\n", amount_1);
+
+  if (amount_1 >= 2) {
+    int amount_1_1 = amount - (20 * amount_1);
+    int amount_2 = amount_1_1 / 10;
+    
+    printf("Amount of $10: %d\n", amount_2);
+
+    int amount_2_1 = amount_1_1 - (10 * amount_2);
+    int amount_3 = amount_2_1 / 5;
+
+    if (amount_3 > 0 && amount_3 <= 4) {  
+      amount_3 += 1;
+    }
+
+    printf("Amount of $5: %d\n", amount_3);
+  }
+
+
 }
 
 
