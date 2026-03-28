@@ -1,8 +1,9 @@
-/* Luis Fernando De Leon
+/* Copyright (c) 2026 Yayo. All Rights Reserved.
  *
- * Mini shell
- *
- * Yeeah
+ * Mini shell written in C
+ * 
+ * I promise myself I'm gonnna finish this(1)
+ * 
  * */
 
 #include <stdio.h>
@@ -24,6 +25,9 @@ main(void) {
     
     // "\n" cleaned for \0 that fgets(3) generates
     input[strcspn(input, "\n")] = '\0';
+    
+    // tokenize
+    
 
     if (strcmp(input, "exit") == 0) {
       break;
